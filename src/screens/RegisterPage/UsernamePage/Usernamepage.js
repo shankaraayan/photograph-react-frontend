@@ -10,7 +10,7 @@ export default function UsernamePage() {
   };
 
   return (
-    <View style={{marginTop:50,width:'100%',padding:16}}>
+    <View style={Styles.page_layout}>
 
       
       <TouchableOpacity onPress={goBack}>
@@ -19,8 +19,9 @@ export default function UsernamePage() {
         </Text>
       </TouchableOpacity>
 
-      <Text style={Styles.register_text}>Register</Text>
+      <Text style={Styles.system_page_heading}>Register</Text>
       <Usernameinput/>
+      <Text style={Styles.system_text}>By signing up, you agree to Photo’s Terms of Service and Privacy Policy.</Text>
     </View>
   )
 }
