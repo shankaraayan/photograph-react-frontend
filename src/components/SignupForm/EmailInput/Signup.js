@@ -8,12 +8,14 @@ export default function Signup() {
       <TextInput
        style={Styles.email_input}
        placeholder='Email'
+       selectionColor="transparent"
       />
     
       <TextInput
       style={Styles.password_input}
       placeholder='Password'
       secureTextEntry={true}
+      selectionColor="transparent"
       />
       <TouchableOpacity
           style={{ backgroundColor: 'black', width: '100%', height: 50, justifyContent: 'center', alignItems: 'center',marginTop:20 }}
