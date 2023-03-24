@@ -9,8 +9,6 @@ export default function UsernamePage() {
     <View style={{marginTop:50,width:'100%',padding:16}}>
       <Text style={Styles.register_text}>Register</Text>
       <Usernameinput/>
-      
-
     </View>
   )
 }

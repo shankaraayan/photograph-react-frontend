@@ -14,7 +14,7 @@ export default function SignupPage({ navigation }) {
     <View style={{marginTop:50,width:'100%',padding:16}}>
 
       <TouchableOpacity onPress={goBack}>
-        <Text style={{ color: 'blue', textDecorationLine: 'underline' }}>
+        <Text style={{ color: 'black',  }}>
           Go Back
         </Text>
       </TouchableOpacity>
