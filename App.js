@@ -8,7 +8,6 @@ export default function App() {
     <View style={styles.container}>
       <SignupPage/>
       <Usernamepage/>
-       
     </View>
   );
 }
