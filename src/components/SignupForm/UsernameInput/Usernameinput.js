@@ -9,6 +9,7 @@ export default function Usernameinput() {
      <TextInput
        style={Styles.username_input}
        placeholder='Username'
+       selectionColor="black"
       />
       <TouchableOpacity
           style={{ backgroundColor: 'black', width: '100%', height: 50, justifyContent: 'center', alignItems: 'center',marginTop:20 }}

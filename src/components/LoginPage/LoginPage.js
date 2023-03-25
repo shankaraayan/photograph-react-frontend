@@ -8,18 +8,18 @@ export default function LoginPage() {
       <TextInput
        style={Styles.email_input}
        placeholder='Email'
-       selectionColor="transparent"
+       selectionColor="black"
       />
     
       <TextInput
       style={Styles.password_input}
       placeholder='Password'
       secureTextEntry={true}
-      selectionColor="transparent"
+      selectionColor="black"
       />
       <TouchableOpacity
           style={{ backgroundColor: 'black', width: '100%', height: 50, justifyContent: 'center', alignItems: 'center',marginTop:20 }}
-          onPress={() => console.log('signup-submited')}
+          onPress={() => console.log('login-page-selected')}
         >
           <Text style={{ color: 'white', fontSize: 16, fontWeight: 'bold' }}>Log in</Text>
         </TouchableOpacity>

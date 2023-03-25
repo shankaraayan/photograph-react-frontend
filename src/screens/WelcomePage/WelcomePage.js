@@ -1,8 +1,12 @@
 import { View, Text, Image, ImageBackground, Button, TouchableOpacity } from 'react-native'
 import React from 'react'
 import { Styles } from './WelcomePageStyles'
+import { useNavigation } from '@react-navigation/core'
+
+
 
 export default function WelcomePage() {
+  const navigation = useNavigation();
   return (
     <View style={Styles.container}
     >
@@ -31,7 +35,9 @@ export default function WelcomePage() {
                   marginBottom:16, 
                   padding: 16,
                   borderColor: 'black',
-                  borderWidth:2, }}>
+                  borderWidth:2, }}
+                  onPress={()=> navigation.navigate("LoginForm")}
+                  >
                     <Text>Log in</Text>
                 </TouchableOpacity>
                 <TouchableOpacity style={{ flex: 1, 
@@ -45,8 +51,9 @@ export default function WelcomePage() {
                   backgroundColor:'black',
                   borderColor: 'black',
                   borderWidth:2, 
-                  
-                  }}>
+                  }}
+                  onPress={()=> navigation.navigate("SignupPage")}
+                  >
                   <Text style={{color: "white",}}>Sign up</Text>
                 </TouchableOpacity>
 
