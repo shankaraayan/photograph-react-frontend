@@ -13,7 +13,8 @@ export const Styles = StyleSheet.create({
     color: 'black', 
     fontSize: 24, 
     fontWeight: 'bold',
-    marginBottom:40
+    marginBottom:20,
+    marginTop:20,
   },
 
 });

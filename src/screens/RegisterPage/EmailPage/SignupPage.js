@@ -11,7 +11,7 @@ export default function SignupPage({ navigation }) {
         <TouchableOpacity
             onPress={()=>navigation.goBack()}
           >
-          <Icon name="back" size={25} color="#000" />
+          <Icon name="back" size={20} color="#000" />
           </TouchableOpacity>
 
     <Text style={Styles.system_page_heading}>Register</Text>
