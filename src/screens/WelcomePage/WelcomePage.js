@@ -15,7 +15,7 @@ export default function WelcomePage() {
           <ImageBackground 
             source={require('../../../assets/WelcomeBG.png')}
             style={Styles.image}>
-            <Text style={Styles.text}>PhotoGraph</Text>
+            <Text style={Styles.text}>NearBy</Text>
             
             <View style={Styles.signature_container}>
                 <Text style={Styles.signature_name}>Kartik Maandothiya</Text>
@@ -43,9 +43,9 @@ export default function WelcomePage() {
                 <TouchableOpacity style={{ flex: 1, 
                   justifyContent:'center',
                   alignItems:'center',
-                  marginLeft:16,
+                  marginLeft:8,
                   marginTop:16,
-                  marginRight:8, 
+                  marginRight:16, 
                   marginBottom:16, 
                   padding: 16,
                   backgroundColor:'black',
