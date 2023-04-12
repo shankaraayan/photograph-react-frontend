@@ -1,6 +1,7 @@
 import { View, Text,StyleSheet, Image  } from 'react-native'
 import React from 'react'
 import { useNavigation } from '@react-navigation/native';
+import Icon  from 'react-native-vector-icons/AntDesign';
 
 export default function Feeds() {
     const navigation = useNavigation;
@@ -19,12 +20,19 @@ export default function Feeds() {
             <Text style={Styles.name}>KartikMaandothiya</Text>
             <Text style={Styles.location}>New Delhi, India</Text>
           </View>
-  </View>
+        </View>
       <Image
         source={{ uri: 'https://images.unsplash.com/photo-1575936123452-b67c3203c357?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8&w=1000&q=80' }}
         style={Styles.image}
         resizeMode="cover"
       />
+        <View style={{ marginTop: 10 }}>
+            <View style={Styles.profileBox}>
+                <Icon name="heart" size={20} color="red" style={{ marginRight: 5 }} /> 
+                <Text style={{ lineHeight: 20 }}>Likes</Text>
+            </View>
+        </View>
+
       </View>
 
     </View>
@@ -33,7 +41,7 @@ export default function Feeds() {
 
 const Styles = StyleSheet.create({
     page_layout:{
-        marginTop:50,width:'100%',padding:16
+        marginTop:10,width:'100%',padding:16
       },
 
       system_text:{
