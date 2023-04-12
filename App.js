@@ -9,7 +9,6 @@ import Feeds from './src/screens/Feeds/Feeds';
 import LoginForm from './src/screens/LoginPage/LoginForm';
 import SignupPage from './src/screens/RegisterPage/EmailPage/SignupPage';
 
-
 const Stack = createNativeStackNavigator();
 
 function App() {
