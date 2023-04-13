@@ -20,11 +20,13 @@ export default function FeedsComp() {
             </View>
             <SettingDot/>
           </View>
+
           <Image
             source={{ uri: 'https://images.unsplash.com/photo-1575936123452-b67c3203c357?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8&w=1000&q=80' }}
             style={Styles.image}
             resizeMode="cover"
           />
+          <Text style={Styles.postContent}>Dummy Text Content would be Here like Tags or #tags #SocialMedia #facebook #Photo o the day. <Text style={Styles.blueHighlight}>Read...</Text> </Text>
           <View style={{ marginTop: 16 }}>
               <LikeCount/>
           </View>
@@ -55,7 +57,7 @@ const Styles = StyleSheet.create({
       image: {
         width: '100%',
         height: '100%',
-        borderRadius:20
+        borderRadius:5
       },
       profileBox: {
         flexDirection: 'row',
@@ -79,7 +81,18 @@ const Styles = StyleSheet.create({
       },
       postBox:{
         display:'flex',
-        minHeight: 550
+        minHeight: 600
+      },
+
+      postContent:{
+        color:'#656d76',
+        paddingTop:10,
+        paddingBottom:10,
+        paddingLeft:10,
+        paddingRight:10,
+      },
+      blueHighlight:{
+        color:'#0969da',
       }
   });
   
