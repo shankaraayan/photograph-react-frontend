@@ -54,7 +54,8 @@ const Styles = StyleSheet.create({
 
       image: {
         width: '100%',
-        height: '100%'
+        height: '100%',
+        borderRadius:20
       },
       profileBox: {
         flexDirection: 'row',
